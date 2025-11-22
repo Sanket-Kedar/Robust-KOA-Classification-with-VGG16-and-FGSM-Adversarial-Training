@@ -92,8 +92,6 @@ The project compares the performance of the original VGG16 model with the advers
 
 | Metric | Original Model | Robust Model | Improvement |
 |--------|----------------|--------------|-------------|
-| Metric | Original Model | Robust Model | Improvement |
-|--------|----------------|--------------|-------------|
 | Clean Accuracy | 79.17% | 78.74% | -0.43% |
 | Adversarial Accuracy (ε=0.005) | 3.32% | 48.61% | +45.29% |
 | Attack Success Rate (ε=0.005) | 96.68% | 51.39% | 45.29% reduced |
@@ -169,11 +167,3 @@ The project compares the performance of the original VGG16 model with the advers
 5. **Practical Implications**: The robust model would be more reliable in real-world scenarios where input data might contain natural variations or adversarial noise.
 4. The model shows different failure modes under attack, as visible in the confusion matrices
 
-## Acknowledgments
-
-- Dataset: [Knee Osteoarthritis Dataset with Severity](https://www.kaggle.com/datasets/shashwatwork/knee-osteoarthritis-dataset-with-severity)
-- This project utilizes TensorFlow/Keras for deep learning implementation
-
-## License
-
-This project is for educational and research purposes only. Please ensure you have the appropriate permissions to use the dataset from Kaggle.
