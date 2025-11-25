@@ -93,9 +93,9 @@ The project compares the performance of the original VGG16 model with the advers
 | Metric | Original Model | Robust Model | Improvement |
 |--------|----------------|--------------|-------------|
 | Clean Accuracy | 79.17% | 78.74% | -0.43% |
-| Adversarial Accuracy (ε=0.005) | 3.32% | 48.61% | +45.29% |
-| Attack Success Rate (ε=0.005) | 96.68% | 51.39% | 45.29% reduced |
-| Accuracy Drop (ε=0.005) | 75.85% | 30.13% | 45.72% improvement |
+| Adversarial Accuracy (ε=0.005) | 2.23% | 49.03% | +46.80% |
+| Attack Success Rate (ε=0.005) | 97.77% | 50.97% | -46.80% reduced |
+| Accuracy Drop (ε=0.005) | 76.94% | 29.71% | -47.23% improvement |
 
 ### Visualizations
 
@@ -151,16 +151,16 @@ The project compares the performance of the original VGG16 model with the advers
 
 #### Performance Comparison
 - **Clean Data Performance**: The robust model maintains comparable accuracy to the original model, with only a 0.43% decrease in clean accuracy (from 79.17% to 78.74%).
-- **Adversarial Robustness**: At ε=0.005, the robust model shows 45.29% higher accuracy compared to the original model's 3.32%.
-- **Attack Success Rate**: The robust model reduces the attack success rate from 96.68% to 51.39% at ε=0.005, a 45.29% reduction.
+- **Adversarial Robustness**: At ε=0.005, the robust model shows 46.80% higher accuracy compared to the original model's 2.23%.
+- **Attack Success Rate**: The robust model reduces the attack success rate from 97.77% to 50.97% at ε=0.005, a 46.80% reduction.
 
 #### Robustness Metrics
 - **Robust Accuracy**: The robust model maintains 54.65% accuracy at ε=0.01, compared to just 0.42% for the original model.
-- **Accuracy Drop**: The robust model shows only 30.13% accuracy drop at ε=0.005 (vs 75.85% for original), a 45.72% improvement in robustness.
+- **Accuracy Drop**: The robust model shows only 29.71% accuracy drop at ε=0.005 (vs 76.94% for original), a 47.23% improvement in robustness.
 - **Class-wise Performance**: The confusion matrices reveal that the robust model is more consistent across both KOA and NO_KOA classes under attack.
 
 ### Key Observations
-1. **Robustness-Accuracy Trade-off**: The robust model shows only a 0.43% decrease in clean accuracy (from 79.17% to 78.74%) while significantly improving adversarial robustness at ε=0.005 (from 3.32% to 48.61%, a 45.29% improvement).
+1. **Robustness-Accuracy Trade-off**: The robust model shows only a 0.43% decrease in clean accuracy (from 79.17% to 78.74%) while significantly improving adversarial robustness at ε=0.005 (from 2.23% to 49.03%, a 46.80% improvement).
 2. **Epsilon Sensitivity**: The robust model's performance degrades more gracefully with increasing epsilon compared to the original model.
 3. **Class-wise Robustness**: Both models show similar patterns of vulnerability across classes, but the robust model demonstrates more balanced performance.
 4. **Visual Analysis**: The adversarial examples show that the robust model's predictions are less sensitive to small perturbations that significantly affect the original model.
